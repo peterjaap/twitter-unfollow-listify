@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^7.2.5",
+        "dg/twitter-php": "^4.1",
         "laravel-zero/framework": "^7.0"
     },
     "require-dev": {
@@ -45,5 +46,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["twitter-unfollow"]
+    "bin": ["twitter"]
 }

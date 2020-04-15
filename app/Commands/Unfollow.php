@@ -2,8 +2,8 @@
 
 namespace App\Commands;
 
-use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
+use DG\Twitter\Twitter;
 
 class Unfollow extends Command
 {
@@ -12,14 +12,14 @@ class Unfollow extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'unfollow';
 
     /**
      * The description of the command.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Unfollow all following';
 
     /**
      * Execute the console command.
@@ -28,17 +28,6 @@ class Unfollow extends Command
      */
     public function handle()
     {
-        //
-    }
-
-    /**
-     * Define the command's schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule $schedule
-     * @return void
-     */
-    public function schedule(Schedule $schedule): void
-    {
-        // $schedule->command(static::class)->everyMinute();
+        $twitter = new Twitter(config('twitter.consumerKey'), $consumerSecret, $accessToken, $accessTokenSecret);
     }
 }
