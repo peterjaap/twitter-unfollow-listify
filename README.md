@@ -2,6 +2,8 @@
 
 This is a small CLI application written to easily unfollow users, edit a CSV file to place them into lists, and import the list again.
 
+**USE AT YOUR OWN RISK**
+
 ## Usage
 Create a Twitter app at [developer.twitter.com](http://developer.twitter.com/) and place the credentials in `.env`;
 
