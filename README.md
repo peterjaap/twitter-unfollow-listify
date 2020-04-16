@@ -24,6 +24,10 @@ This creates a CSV file with the unfollowed users' id, name, bio, and location. 
 
 After you are done filling out the CSV, you can import the CSV; the application will create the list for you (if it doesn't exist) and add the users to that list.
 
+```bash
+./twitter add <yourusername>
+```
+
 ## Notes
 
 The functionality depends on a pull request being merged, which might not (yet) be the case; https://github.com/dg/twitter-php/pull/72
